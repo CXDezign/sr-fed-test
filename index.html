@@ -58,8 +58,8 @@
 						<li class="navigation-item">
 							<button type="button" class="navigation-toggle">
 								<span class="screen-reader">Toggle Navigation</span>
-								<img class="navigation-toggle-icon navigation-toggle-icon-open" src="/media/icons/menu-open.svg" alt="Open menu icon" />
-								<img class="navigation-toggle-icon navigation-toggle-icon-close" src="/media/icons/menu-close.svg" alt="Close menu icon" />
+								<img class="navigation-toggle-icon navigation-toggle-icon-open" width="26" height="26" src="/media/icons/menu-open.svg" alt="Open menu icon" />
+								<img class="navigation-toggle-icon navigation-toggle-icon-close" width="31" height="28" src="/media/icons/menu-close.svg" alt="Close menu icon" />
 							</button>
 						</li>
 					</ul>
@@ -92,8 +92,23 @@
 						<div class="content">
 							<div class="gallery" id="section-hero-gallery">
 								<div class="shape shape-box background-accent margin-x-auto">
-									<img class="gallery-item" src="/media/images/photo-1.jpg" width="380" height="306" alt="Enthusiastic group of colleagues jumping in the office hallway, pulling silly faces" />
-									<img class="gallery-item" src="/media/images/photo-2.jpg" width="380" height="307" alt="Cheerful group of people, smiling and sitting on a concrete bench in the park" />
+									<img
+										class="gallery-item"
+										srcset="/media/images/photo-1-mobile.webp 500w,
+											/media/images/photo-1.webp 1000w"
+										sizes="(max-width: 768px) 500px,
+										1000px"
+										width="380" height="306"
+										alt="Enthusiastic group of colleagues jumping in the office hallway, pulling silly faces"
+									/>
+									<img
+										class="gallery-item"
+										srcset="/media/images/photo-2-mobile.webp 768w,
+											/media/images/photo-2.webp 1000w"
+										sizes="(max-width: 768px) 500px,
+										1000px"
+										width="380" height="307"
+										alt="Cheerful group of people, smiling and sitting on a concrete bench in the park" />
 								</div>
 							</div>
 						</div>
@@ -118,10 +133,46 @@
 						</div>
 						<div class="content">
 							<div class="gallery" id="section-difference-gallery">
-								<img class="gallery-item" src="/media/images/photo-3.jpg" width="180" height="350" alt="Smiling person in a field, holding a small yellow flower, surrounded by trees and shrubs." />
-								<img class="gallery-item" src="/media/images/photo-4.jpg" width="180" height="165" alt="Smiling person, looking off to the side, prominent earing with an Ankh (ancient Egyptian hieroglyphic) earring." />
-								<img class="gallery-item" src="/media/images/photo-5.jpg" width="180" height="165" alt="Smiling person with a green background in a field, with wind swept hair across the face." />
-								<img class="gallery-item" src="/media/images/photo-6.jpg" width="180" height="350" alt="Smiling person wearing cool sunglasses, both hands producing a peace symbol." />
+								<img
+									loading="lazy"
+									class="gallery-item"
+									srcset="/media/images/photo-3-mobile.webp 334w,
+										/media/images/photo-3.webp 667w"
+									sizes="(max-width: 768px) 334px,
+									667px"
+									width="180" height="350"
+									alt="Smiling person in a field, holding a small yellow flower, surrounded by trees and shrubs."
+								/>
+								<img
+									loading="lazy"
+									class="gallery-item"
+									srcset="/media/images/photo-4-mobile.webp 334w,
+										/media/images/photo-4.webp 1000w"
+									sizes="(max-width: 768px) 333px,
+									1000px"
+									width="180" height="165"
+									alt="Smiling person, looking off to the side, prominent earing with an Ankh (ancient Egyptian hieroglyphic) earring."
+								/>
+								<img
+									loading="lazy"
+									class="gallery-item"
+									srcset="/media/images/photo-5-mobile.webp 334w,
+										/media/images/photo-5.webp 1000w"
+									sizes="(max-width: 768px) 333px,
+									1000px"
+									width="180" height="165"
+									alt="Smiling person with a green background in a field, with wind swept hair across the face."
+								/>
+								<img
+									loading="lazy"
+									class="gallery-item"
+									srcset="/media/images/photo-6-mobile.webp 334w,
+										/media/images/photo-6.webp 667w"
+									sizes="(max-width: 768px) 334px,
+									667px"
+									width="180" height="350"
+									alt="Smiling person wearing cool sunglasses, both hands producing a peace symbol."
+								/>
 							</div>
 						</div>
 					</div>
@@ -135,7 +186,7 @@
 				<div class="dialog-container">
 					<form id="form-register" method="dialog">
 						<button class="dialog-button-close" autofocus>
-							<img src="/media/icons/dialog-close.svg" alt="Close dialog icon" />
+							<img loading="lazy" src="/media/icons/dialog-close.svg" alt="Close dialog icon" />
 						</button>
 						<h2>Welcome <span id="form-register-value-name">user</span></h2>
 						<div class="input-group">
