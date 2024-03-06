@@ -46,20 +46,20 @@
 						<li class="navigation-item">
 							<a class="navigation-link" href="/#">
 								<span class="screen-reader">Search</span>
-								<img src="/media/icons/search.svg" alt="Search icon" />
+								<img src="/media/icons/search.svg" width="26" height="26" alt="Search icon" />
 							</a>
 						</li>
 						<li class="navigation-item">
 							<a class="navigation-link" href="/#">
 								<span class="screen-reader">Favourite</span>
-								<img src="/media/icons/favourite.svg" alt="Favourite icon" />
+								<img src="/media/icons/favourite.svg" width="31" height="28" alt="Favourite icon" />
 							</a>
 						</li>
 						<li class="navigation-item">
 							<button type="button" class="navigation-toggle">
 								<span class="screen-reader">Toggle Navigation</span>
-								<img class="navigation-toggle-icon navigation-toggle-icon-open" width="26" height="26" src="/media/icons/menu-open.svg" alt="Open menu icon" />
-								<img class="navigation-toggle-icon navigation-toggle-icon-close" width="31" height="28" src="/media/icons/menu-close.svg" alt="Close menu icon" />
+								<img class="navigation-toggle-icon navigation-toggle-icon-open" width="32" height="20" src="/media/icons/menu-open.svg" alt="Open menu icon" />
+								<img class="navigation-toggle-icon navigation-toggle-icon-close" width="32" height="25" src="/media/icons/menu-close.svg" alt="Close menu icon" />
 							</button>
 						</li>
 					</ul>
@@ -93,6 +93,8 @@
 							<div class="gallery" id="section-hero-gallery">
 								<div class="shape shape-box background-accent margin-x-auto">
 									<img
+										loading="eager"
+										fetchpriority="high"
 										class="gallery-item"
 										srcset="/media/images/photo-1-mobile.webp 500w,
 											/media/images/photo-1.webp 1000w"
@@ -102,6 +104,8 @@
 										alt="Enthusiastic group of colleagues jumping in the office hallway, pulling silly faces"
 									/>
 									<img
+										loading="eager"
+										fetchpriority="high"
 										class="gallery-item"
 										srcset="/media/images/photo-2-mobile.webp 768w,
 											/media/images/photo-2.webp 1000w"

@@ -1,15 +1,19 @@
 {
-	"name": "dissolve",
-	"private": true,
-	"version": "0.0.0",
-	"type": "module",
-	"scripts": {
-		"dev": "vite",
-		"build": "vite build",
-		"preview": "vite preview"
-	},
-	"devDependencies": {
-		"sass": "^1.71.1",
-		"vite": "^4.4.5"
-	}
+  "name": "dissolve",
+  "version": "1.0.0",
+  "devDependencies": {
+    "http-server": "^14.1.1",
+    "sass": "^1.71.1",
+    "vite": "^4.4.5",
+    "vite-plugin-compression": "^0.5.1",
+    "vite-plugin-optimize-css-modules": "^1.0.6",
+    "vite-plugin-preload": "^0.3.1"
+  },
+  "private": true,
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "serve": "http-server ./build --gzip -c31536000"
+  },
+  "type": "module"
 }
