@@ -6,7 +6,9 @@
 	border: 2px solid $accent
 	background-color: $bg
 	font-size: 14px
+	box-shadow: 0px 4px 4px 0px transparentize(#000, 1)
 	@include transitions
 	@include focus-accessibility
 	&:hover
 		background-color: $accent
+		box-shadow: 0px 4px 4px 0px transparentize(#000, .85)
