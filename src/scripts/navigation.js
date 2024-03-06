@@ -9,9 +9,9 @@ let menu = false
 
 const toggleNavigation = () => {
 	const navigationComputedStyle = window.getComputedStyle(navigation.mobile)
-	navigation.mobile.classList.add('transitioning')
+	navigation?.mobile?.classList.add('transitioning')
 	let transition = navigationComputedStyle?.getPropertyValue('transition-duration')
-	transition = transition.replace('s', '')
+	transition = transition?.replace('s', '')
 
 	setTimeout(() => {
 		navigation.mobile.classList.remove('transitioning')
@@ -21,6 +21,7 @@ const toggleNavigation = () => {
 	isOverlayActive(menu)
 	menu ? toggle?.classList.add('active') : toggle?.classList.remove('active')
 	menu ? navigation?.mobile?.classList.add('active') : navigation?.mobile?.classList.remove('active')
+	menu ? navigation.mobile.querySelector('a').focus() : null
 }
 
 const disableNavigation = () => {
