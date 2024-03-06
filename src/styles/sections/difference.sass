@@ -5,19 +5,19 @@ section#difference
 		gap: 1.25rem
 		margin-inline: auto
 		max-width: 500px
-		@include responsive('desktop')
+		@include responsive('tablet')
 			grid-template-areas: 'a b d' 'a c d'
 			max-width: unset
 		.gallery-item
 			max-width: 100%
 			max-height: 100%
-			@include responsive('desktop')
+			@include responsive('tablet')
 				max-width: unset
 				max-height: unset
 			&:nth-of-type(1)
 				display: none
 				grid-area: a
-				@include responsive('desktop')
+				@include responsive('tablet')
 					display: block
 			&:nth-of-type(2)
 				grid-area: b

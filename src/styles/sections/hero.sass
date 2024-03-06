@@ -2,6 +2,8 @@ section#hero
 	#section-hero-gallery
 		display: flex
 		place-items: center
+		@include responsive('tablet')
+			min-height: 400px
 		@include responsive('desktop')
 			min-height: 500px
 		.gallery-item
@@ -11,7 +13,7 @@ section#hero
 				top: 0
 				left: 0
 				transform: translate(-25%, -20%) scaleX(-1)
-				@include responsive('desktop')
+				@include responsive('tablet')
 					display: block
 			&:last-of-type
 				bottom: 0
@@ -22,7 +24,7 @@ section#hero
 				max-height: 200px
 				margin-inline: auto
 				box-shadow: -2px 2px 5px 2px #00000026
-				@include responsive('desktop')
+				@include responsive('tablet')
 					left: unset
 					transform: translate(30%, 15%)
 					max-width: unset
@@ -31,6 +33,6 @@ section#hero
 			max-width: 450px
 			width: 100%
 			height: 182px
-			@include responsive('desktop')
+			@include responsive('tablet')
 				max-width: 330px
 				height: 330px
