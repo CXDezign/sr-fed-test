@@ -5,12 +5,19 @@ section
 	place-content: center
 	min-height: 150px
 	width: 100%
-	padding-block: 3rem
+	padding-block: 2rem
+	@include responsive('desktop')
+		padding-block: 3rem
 	.container
 		display: flex
+		flex-direction: column
+		place-items: center
 		gap: 3rem
 		max-width: map.get($containers-max-widths, 'layout')
 		width: 100%
+		padding-inline: 2rem
+		@include responsive('desktop')
+			flex-direction: row
 		.content
 			display: flex
 			flex-direction: column
@@ -18,3 +25,7 @@ section
 			gap: 2rem
 			max-width: map.get($containers-max-widths, 'content')
 			width: 100%
+			.button
+				margin-inline: auto
+				@include responsive('desktop')
+					margin-inline: unset
