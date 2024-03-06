@@ -21,7 +21,7 @@ bun run build
 npm run build
 ```
 
-2) Test website
+3) Test website
 ```
 # Bun
 bun run serve
