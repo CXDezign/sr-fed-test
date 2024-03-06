@@ -10,7 +10,34 @@ nav#navigation
 	font-weight: 600
 	@include responsive('desktop')
 		font-size: 16px
+	.navigation-item-responsive
+		display: none
+		@include responsive('tablet')
+			display: flex
+
+nav#navigation-mobile
+	position: fixed
+	z-index: 800
+	visibility: none
+	flex-direction: column
+	height: 100vh
+	width: 100%
+	background-color: $accent
+	transform: translateX(100%)
+	transition: transform 1s ease-in-out
+	&.active
+		display: flex
+		visibility: visible
+		transform: translateX(0%)
+		@include responsive('tablet')
+			display: none
+
+	display: flex
+	@include responsive('tablet')
+		display: none
 
 @import list
 @import item
 @import link
+@import toggle
+@import navigation-mobile

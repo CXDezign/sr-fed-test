@@ -1,0 +1,22 @@
+.navigation-toggle
+	display: flex
+	place-content: center
+	place-items: center
+	width: 2.5rem
+	height: 2.5rem
+	.navigation-toggle-icon
+		position: absolute
+		max-width: 2rem
+		max-height: 2rem
+		opacity: 0
+		transition: opacity .25s ease-in-out
+	&:not(.active)
+		.navigation-toggle-icon-open
+			display: flex
+			opacity: 1
+	&.active
+		.navigation-toggle-icon-close
+			display: flex
+			opacity: 1
+	@include responsive('tablet')
+		display: none
