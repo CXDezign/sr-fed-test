@@ -1,0 +1,33 @@
+@use "sass:map"
+
+dialog
+	position: fixed
+	z-index: 1000
+	max-width: 90vw
+	width: 100%
+	margin: auto
+	background-color: $accent
+	color: #fff
+	@include responsive('mobile')
+		max-width: 80vw
+	@include responsive('tablet')
+		max-width: map.get($containers-max-widths, 'content')
+	&::backdrop
+		background-color: transparentize(#000, .5)
+		-webkit-backdrop-filter: blur(10px)
+		backdrop-filter: blur(10px)
+	.dialog-container
+		position: relative
+		padding: 2rem 1rem
+		@include responsive('mobile')
+			padding: 3rem 2rem
+		@include responsive('tablet')
+			padding: 4rem 3rem
+
+.dialog-button-close
+	position: absolute
+	top: .5rem
+	right: .5rem
+	@include responsive('mobile')
+		top: 1rem
+		right: 1rem
