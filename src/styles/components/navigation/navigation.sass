@@ -8,7 +8,7 @@ nav#navigation
 	padding-inline: 2rem
 	font-size: 20px
 	font-weight: 600
-	@include responsive('desktop')
+	@include responsive('tablet')
 		font-size: 16px
 	.navigation-item-responsive
 		display: none
@@ -24,7 +24,8 @@ nav#navigation-mobile
 	width: 100%
 	background-color: $accent
 	transform: translateX(100%)
-	transition: transform 1s ease-in-out
+	@include transitions
+	transition-duration: 1s !important
 	&.active
 		display: flex
 		visibility: visible
