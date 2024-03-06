@@ -1,0 +1,18 @@
+section#hero
+	#section-hero-gallery
+		display: flex
+		min-height: 500px
+		place-items: center
+		.gallery-item
+			position: absolute
+			&:first-of-type
+				top: 0
+				left: 0
+				transform: translate(-25%, -20%) scaleX(-1)
+			&:last-of-type
+				bottom: 0
+				right: 0
+				transform: translate(40%, 15%)
+		.shape-box
+			width: 330px
+			height: 330px
