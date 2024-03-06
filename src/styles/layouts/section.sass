@@ -1,6 +1,19 @@
+@use "sass:map"
+
 section
 	display: flex
 	place-content: center
 	min-height: 150px
 	width: 100%
 	padding-block: 3rem
+	.container
+		display: flex
+		gap: 3rem
+		max-width: map.get($containers-max-widths, 'layout')
+		width: 100%
+		.content
+			display: flex
+			flex-direction: column
+			place-content: center
+			max-width: map.get($containers-max-widths, 'content')
+			width: 100%
