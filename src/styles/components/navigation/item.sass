@@ -1,0 +1,17 @@
+.navigation-item
+	position: relative
+	&::after
+		content: ' '
+		position: absolute
+		left: 0
+		right: 0
+		bottom: 0
+		width: 100%
+		height: 3px
+		background-color: $accent
+		border-radius: 1px
+		opacity: 0
+		@include transitions
+	&:hover
+		&::after
+			opacity: 1
