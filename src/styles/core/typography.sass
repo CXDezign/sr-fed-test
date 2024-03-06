@@ -1,0 +1,18 @@
+body
+	@include font('Open-Sans')
+	font-size: 18px
+	color: $text
+	
+h1,
+h2
+	@include font('Ubuntu')
+	font-weight: 400
+h1
+	font-weight: 500
+	font-size: 25px
+	@include responsive('desktop')
+		font-size: 40px
+h2
+	font-size: 20px
+	@include responsive('desktop')
+		font-size: 30px

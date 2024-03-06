@@ -1,0 +1,5 @@
+@use "sass:map"
+
+@mixin responsive($device)
+	@media (min-width: map.get($devices, $device))
+		@content
