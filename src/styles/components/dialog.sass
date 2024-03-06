@@ -8,6 +8,7 @@ dialog
 	margin: auto
 	background-color: $accent
 	color: #fff
+	@include focus-accessibility
 	@include responsive('mobile')
 		max-width: 80vw
 	@include responsive('tablet')
@@ -28,6 +29,12 @@ dialog
 	position: absolute
 	top: .5rem
 	right: .5rem
+	display: flex
+	place-content: center
+	place-items: center
+	width: 2rem
+	height: 2rem
+	@include focus-accessibility
 	@include responsive('mobile')
 		top: 1rem
 		right: 1rem
