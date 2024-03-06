@@ -29,28 +29,28 @@
 					</a>
 					<ul class="navigation-list">
 						<li class="navigation-item navigation-item-responsive">
-							<a class="navigation-link" href="/#">
+							<a class="navigation-link" href="/about">
 								About us
 							</a>
 						</li>
 						<li class="navigation-item navigation-item-responsive">
-							<a class="navigation-link" href="/#">
+							<a class="navigation-link" href="/stories">
 								Our Stories
 							</a>
 						</li>
 						<li class="navigation-item navigation-item-responsive">
-							<a class="navigation-link" href="/#">
+							<a class="navigation-link" href="/values">
 								Our values
 							</a>
 						</li>
 						<li class="navigation-item">
-							<a class="navigation-link" href="/#">
+							<a class="navigation-link" href="/search">
 								<span class="screen-reader">Search</span>
 								<img src="/media/icons/search.svg" width="26" height="26" alt="Search icon" />
 							</a>
 						</li>
 						<li class="navigation-item">
-							<a class="navigation-link" href="/#">
+							<a class="navigation-link" href="/favourite">
 								<span class="screen-reader">Favourite</span>
 								<img src="/media/icons/favourite.svg" width="31" height="28" alt="Favourite icon" />
 							</a>
@@ -69,17 +69,17 @@
 			<nav id="navigation-mobile">
 				<ul class="navigation-list">
 					<li class="navigation-item">
-						<a class="navigation-link" href="/#">
+						<a class="navigation-link" href="/about">
 							About us
 						</a>
 					</li>
 					<li class="navigation-item">
-						<a class="navigation-link" href="/#">
+						<a class="navigation-link" href="/stories">
 							Our Stories
 						</a>
 					</li>
 					<li class="navigation-item">
-						<a class="navigation-link" href="/#">
+						<a class="navigation-link" href="/values">
 							Our values
 						</a>
 					</li>
@@ -100,6 +100,7 @@
 											/media/images/photo-1.webp 1000w"
 										sizes="(max-width: 768px) 500px,
 										1000px"
+										src="/media/images/photo-1.webp"
 										width="380" height="306"
 										alt="Enthusiastic group of colleagues jumping in the office hallway, pulling silly faces"
 									/>
@@ -111,6 +112,7 @@
 											/media/images/photo-2.webp 1000w"
 										sizes="(max-width: 768px) 500px,
 										1000px"
+										src="/media/images/photo-2.webp"
 										width="380" height="307"
 										alt="Cheerful group of people, smiling and sitting on a concrete bench in the park" />
 								</div>
@@ -119,7 +121,7 @@
 						<div class="content">
 							<h1>Working together to make a better tomorrow!</h1>
 							<h2>Breaking down the barriers and opening opportunities.</h2>
-							<button type="button" class="button dialog-button-open" dialog-target="dialog-register">Click here to register your interest</button>
+							<button type="button" class="button dialog-button-open" data-dialog-target="dialog-register">Click here to register your interest</button>
 						</div>
 					</div>
 				</section>
@@ -144,8 +146,9 @@
 										/media/images/photo-3.webp 667w"
 									sizes="(max-width: 768px) 334px,
 									667px"
+									src="/media/images/photo-3.webp"
 									width="180" height="350"
-									alt="Smiling person in a field, holding a small yellow flower, surrounded by trees and shrubs."
+									alt="Smiling person holding a small yellow flower."
 								/>
 								<img
 									loading="lazy"
@@ -154,8 +157,9 @@
 										/media/images/photo-4.webp 1000w"
 									sizes="(max-width: 768px) 333px,
 									1000px"
+									src="/media/images/photo-4.webp"
 									width="180" height="165"
-									alt="Smiling person, looking off to the side, prominent earing with an Ankh (ancient Egyptian hieroglyphic) earring."
+									alt="Smiling person with Ankh (ancient Egyptian hieroglyphic) earring."
 								/>
 								<img
 									loading="lazy"
@@ -164,8 +168,9 @@
 										/media/images/photo-5.webp 1000w"
 									sizes="(max-width: 768px) 333px,
 									1000px"
+									src="/media/images/photo-5.webp"
 									width="180" height="165"
-									alt="Smiling person with a green background in a field, with wind swept hair across the face."
+									alt="Smiling person in a field, wind swept hair across the face."
 								/>
 								<img
 									loading="lazy"
@@ -174,6 +179,7 @@
 										/media/images/photo-6.webp 667w"
 									sizes="(max-width: 768px) 334px,
 									667px"
+									src="/media/images/photo-6.webp"
 									width="180" height="350"
 									alt="Smiling person wearing cool sunglasses, both hands producing a peace symbol."
 								/>
@@ -182,19 +188,17 @@
 					</div>
 				</section>
 
-				<section class=""></section>
-
 			</main>
 			
 			<dialog id="dialog-register">
 				<div class="dialog-container">
 					<form id="form-register" method="dialog">
-						<button class="dialog-button-close" autofocus>
+						<button type="button" class="dialog-button-close" autofocus>
 							<img loading="lazy" src="/media/icons/dialog-close.svg" alt="Close dialog icon" />
 						</button>
 						<h2>Welcome <span id="form-register-value-name">user</span></h2>
 						<div class="input-group">
-							<label class="input-label">Please enter your name</label>
+							<label class="input-label" for="form-register-input-name">Please enter your name</label>
 							<input type="text" class="input-field" placeholder="Name" id="form-register-input-name" aria-label="Name field" />
 						</div>
 					</form>
