@@ -1,14 +1,16 @@
 @use "sass:map"
-@import list
-@import item
-
 nav#navigation
 	display: flex
 	place-content: space-between
 	place-items: center
 	max-width: map.get($containers-max-widths, 'layout')
 	width: 100%
+	padding-inline: 2rem
 	font-size: 20px
 	font-weight: 600
 	@include responsive('desktop')
 		font-size: 16px
+
+@import list
+@import item
+@import link
