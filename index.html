@@ -23,11 +23,11 @@
 		<div id="app">
 			<header>
 				<nav id="navigation">
-					<a href="/#">
-						<span class="screen-reader">Homepage for Dissolve Company</span>
+					<a href="/">
+						<span class="screen-reader">Homepage</span>
 						<img src="/media/images/logo.png" width="54" height="54" alt="Dissolve logo" />
 					</a>
-					<ul class="navigation-list">
+					<ul class="navigation-list" aria-label="Navigation List">
 						<li class="navigation-item navigation-item-responsive">
 							<a class="navigation-link" href="/about">
 								About us
@@ -56,8 +56,7 @@
 							</a>
 						</li>
 						<li class="navigation-item">
-							<button type="button" class="navigation-toggle">
-								<span class="screen-reader">Toggle Navigation</span>
+							<button type="button" class="navigation-toggle" aria-label="Toggle Navigation">
 								<img class="navigation-toggle-icon navigation-toggle-icon-open" width="32" height="20" src="/media/icons/menu-open.svg" alt="Open menu icon" />
 								<img class="navigation-toggle-icon navigation-toggle-icon-close" width="32" height="25" src="/media/icons/menu-close.svg" alt="Close menu icon" />
 							</button>
@@ -193,7 +192,7 @@
 			<dialog id="dialog-register">
 				<div class="dialog-container">
 					<form id="form-register" method="dialog">
-						<button type="button" class="dialog-button-close">
+						<button type="button" class="dialog-button-close" aria-label="Close dialog">
 							<img loading="lazy" src="/media/icons/dialog-close.svg" alt="Close dialog icon" />
 						</button>
 						<h2>Welcome <span id="form-register-value-name">user</span></h2>
