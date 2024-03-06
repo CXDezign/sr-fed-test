@@ -2,7 +2,8 @@
 
 
 # How to build and test
-If lost, please check the `package.json` file, within the `scripts` object.
+If lost, please check the `package.json` file, for which scripts should be run in order to install, build, and test the website.
+
 If something is broken with the website upon loading, please get in touch.
 
 1) Install prerequisites
